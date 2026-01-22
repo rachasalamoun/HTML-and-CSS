@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Racha's Electric Cinema</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <style>
+      /* Electric Theme */
+      body {
+        background-color: #12002b; /* Deep Violet Background */
+        color: #e0e0e0;
+        font-family: 'Arial', sans-serif;
+      }
+      .navbar {
+        background-color: #3d007a !important; /* Lighter Violet */
+        border-bottom: 2px solid #00d4ff; /* Cyan Border */
+      }
+      .jumbotron {
+        background: linear-gradient(45deg, #3d007a, #000);
+        color: white;
+      }
+      .card {
+        background-color: #1f1f1f;
+        border: 1px solid #3d007a;
+      }
+      .card-title {
+        color: #00d4ff; /* Cyan Text */
+      }
+      /* Customizing badges */
+      .badge-info {
+        background-color: #6200ea;
+        border: 1px solid #00d4ff;
+      }
+      section {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">RACHA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navRacha">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navRacha">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center" id="about">
+      <h1 class="display-4">Electric Cinema</h1>
+      <p class="lead">High voltage entertainment.</p>
+    </div>
+
+    <div class="container" id="showtimes">
+      <h3 class="text-center mb-4 text-info">Current Screenings</h3>
+      
+      <div class="card-deck">
+        
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong">
+          <div class="card-body">
+            <h5 class="card-title">Kong: Skull Island</h5>
+            <p class="card-text">A diverse team of explorers is brought together to venture deep into an uncharted island in the Pacific—as beautiful as it is treacherous.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost">
+          <div class="card-body">
+            <h5 class="card-title">Ghost in the Shell</h5>
+            <p class="card-text">In the near future, Major is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty">
+          <div class="card-body">
+            <h5 class="card-title">Beauty and the Beast</h5>
+            <p class="card-text">The fantastic journey of Belle, a bright, beautiful and independent young woman who is taken prisoner by a beast in his castle.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="deals" class="container text-center mt-5 mb-5">
+       <button class="btn btn-info btn-block">Unlock Rewards</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
