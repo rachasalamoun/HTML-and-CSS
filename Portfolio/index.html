@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racha's Creative Portfolio</title>
+
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #6c5ce7; /* Cool Purple */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #a29bfe;
+    color: #2d3436;
+    border-radius: 8px;
+}
+
+/* Video Background & Text Overlay */
+.video-container {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.video-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Two-Column Layout */
+.two-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.column {
+    width: 45%;
+    height: 200px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    color: #6c5ce7; /* Specified Font Color */
+}
+
+/* Image Styling & Overlay Fade */
+.image-showcase {
+    text-align: center;
+    padding: 50px;
+}
+
+.styled-img {
+    display: block;
+    margin: 0 auto; /* Center image */
+    border-radius: 30px; /* Rounded edges */
+    filter: saturate(1.5) contrast(1.1); /* CSS Filter */
+    width: 100%;
+    max-width: 500px;
+}
+
+.overlay-container {
+    position: relative;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%; width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fd79a8; /* Pink overlay */
+    border-radius: 30px;
+}
+
+.overlay-container:hover .overlay-text {
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Table Styling */
+.table-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: 2px solid #6c5ce7; /* Table Border */
+}
+
+th, td {
+    padding: 15px; /* Cell Padding */
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tr:first-child {
+    background-color: #fab1a0; /* Background color top row */
+    color: white;
+}
+
+/* Hover effect on P */
+.hover-p {
+    margin-top: 20px;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.hover-p:hover {
+    color: #d63031;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+    color: white;
+    padding: 30px;
+    text-align: center; /* Centered */
+    font-weight: bold; /* Bold */
+}
+  
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#how-to">How To Create a Fixed Menu</a>
+    </nav>
+
+    <header id="home" class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-cubes-and-waves-background-2720-large.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h1>Hi, I'm Racha</h1>
+            <p>Welcome to my colorful world of design.</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="about" class="two-column">
+            <div class="column col-left">
+                <h2>About Me</h2>
+                <p>I am a student passionate about building unique web experiences.</p>
+            </div>
+            <div class="column col-right">
+                <h2>My Skills</h2>
+                <p>Focusing on HTML, CSS, and interactive UI/UX design.</p>
+            </div>
+        </section>
+
+        <section class="image-showcase">
+            <h3>Image Effects</h3>
+            <div class="overlay-container">
+                <img src="https://picsum.photos/500/300" alt="Sample" class="styled-img">
+                <div class="overlay-text">
+                    <div class="text">Creative Vision</div>
+                </div>
+            </div>
+            <p class="hover-p">Hover over this text to see a cool effect!</p>
+        </section>
+
+        <section class="table-section">
+            <h3>Project Status</h3>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>Web Design</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Alive timer App</td>
+                    <td>Python</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="how-to" class="info-box">
+            <h3>How To Create a Fixed Menu</h3>
+            <p>To create a fixed menu, use <code>position: fixed;</code> in CSS. This keeps the nav at the top of the viewport even when scrolling. Ensure you add <code>top: 0;</code> and a <code>width: 100%;</code>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Racha Portfolio - Built with Style</p>
+    </footer>
+
+</body>
+</html>
